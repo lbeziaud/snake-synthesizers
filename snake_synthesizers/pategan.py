@@ -124,5 +124,5 @@ class MyPATEGAN(PATEGAN):
         ]
     }
 
-    def __init__(self, **kwargs):
-        super().__init__(metadata=self.METADATA, **kwargs)
+    def __init__(self, *, epsilon=1.0, **kwargs):
+        super().__init__(metadata=self.METADATA, eps=epsilon, **kwargs)
