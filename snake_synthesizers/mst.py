@@ -14,6 +14,7 @@ from scipy import sparse
 class MST(GenerativeModel):
     def __init__(self, domain, min_, epsilon=1.0, delta=1.0e-9):
         self.datatype = pd.DataFrame
+        self.multiprocess = True
 
         self.domain = Domain.fromdict(domain)
         self.min_vals = min_
