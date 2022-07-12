@@ -31,6 +31,8 @@ class CopulaShirley(GenerativeModel):
         vine_tree_crit="tau",
         n_cores=1,
     ):
+        self.datatype = DataFrame
+
         self.datetime_attributes = datetime_attributes
         self.categorical_attributes = categorical_attributes
         self.constant_cols = constant_cols
