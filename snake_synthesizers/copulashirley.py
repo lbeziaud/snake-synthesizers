@@ -1,3 +1,4 @@
+import pandas as pd
 from copula_shirley.preprocess import PreprocessData
 from copula_shirley.transform import GetECDFs
 from copula_shirley.transform import SampleForVine
